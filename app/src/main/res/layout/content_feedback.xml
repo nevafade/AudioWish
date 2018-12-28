@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#c60f37"
+    tools:showIn="@layout/activity_feedback" tools:context="com.example.dell.audiowish.Feedback">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:textAlignment="gravity"
+        android:text="Enter Comments : "
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:padding="60dp"
+        android:background="@drawable/feedback_bubble"
+        android:gravity="start"
+        android:layout_above="@+id/submit_feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:text="Submit"
+        android:id="@+id/submit_feedback"
+        android:background="@drawable/submit_bubble"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="62dp" />
+</RelativeLayout>
